@@ -1,6 +1,5 @@
 /* -------------------------------------
 ~> Name Temp     : Posts Sting Web Api
-~> Version	     : V 1.0 beta
 ~> Last Updated  : 10-08-2022 : 12:37 AM
 ~> Dev By     	 : Sting Dev  - Facebook Page ->  https://www.facebook.com/stingweb.eg
 ~> Desgin URL    : sting-web.blogspot.com
