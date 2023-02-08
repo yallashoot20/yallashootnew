@@ -1,0 +1,206 @@
+/* -------------------------------------
+~> Name Temp     : Posts Sting Web Api
+~> Version	     : V 1.0 beta
+~> Last Updated  : 10-08-2022 : 12:37 AM
+~> Dev By     	 : Sting Dev  - Facebook Page ->  https://www.facebook.com/stingweb.eg
+~> Desgin URL    : sting-web.blogspot.com
+   -------------------------------------- */
+
+   
+/*================= Start Api Css - Sting Web ===================*/
+
+:root {
+    --BG: #0066cc;
+    --BT: #eceef2;
+    --BTR: #d8dbe1;
+    --BG1: #e8e8e8 none no-repeat fixed center center;
+    --BG2: #fff;
+    --BG3: #fff;
+    --ST1: #000;
+    --ST2: #3e3e3e;
+    --STH: #474747;
+    --ST3: #104783;
+    --ST4: #68581d;
+    --ST5: #eceef2;
+    --ST7: #fff;
+    --ST8: #3e3e3e;
+    --CO: #333;
+    --BR: #eee;
+    --BP: #eee;
+    --GD: #eceef2;
+    --BL: #e8e8e8;
+    --BFO: #fff;
+    --BGS: #0066cc
+}
+
+:root body.Dark {
+    --BG: #1c2733;
+    --BT: #1c2733;
+    --BG1: #1c2733;
+    --BTR: #374656;
+    --BG2: #263545;
+    --BG3: #121a23;
+    --CO: #fff;
+    --BR: #252f3a;
+    --BP: #1c2733;
+    --ST1: #fff;
+    --ST2: #121a23;
+    --STH: #263545;
+    --ST3: #263545;
+    --ST4: #263545;
+    --ST5: #121a23;
+    --ST7: #fff;
+    --ST8: #121a23;
+    --GD: #121a23;
+    --BFO: #263545;
+    --BL: #121a23;
+    --BGS: #121a23
+}
+
+@font-face {
+    font-family: 'Neo Sans Arabic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Neo Sans Arabic'), url('https://cdn.statically.io/gh/yallashoot808/yalla-shoot-new/6a47ce1e/NeoSansArabic.woff') format('woff')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Neo Sans Arabic';
+}
+
+.StingApiPost {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px 15px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+    padding: 10px;
+    background: var(--BG2);
+}
+
+a.linkPostApi {
+    grid-template-columns: 1fr;
+    font-size: 12px;
+    text-align: center;
+    padding: 3px 3px;
+    color: var(--CO);
+    transition: .3s .1s all ease;
+    line-height: 21px;
+    width: 92%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+div#TableAutoSting1,
+div#TableAutoSting2,
+div#TableAutoSting3,
+div#TableAutoSting4,
+div#TableAutoSting5,
+div#TableAutoSting6,
+div#TableAutoSting7,
+div#TableAutoSting8 {
+    display: inline-block;
+    z-index: 1;
+    border-radius: 7px;
+    transition: .3s all ease;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 230px;
+    background: var(--BT);
+    box-shadow: 0 0 2px 0 #0a0d3714;
+}
+
+#TableAutoSting1 img,
+#TableAutoSting2 img,
+#TableAutoSting3 img,
+#TableAutoSting4 img,
+#TableAutoSting5 img,
+#TableAutoSting6 img,
+#TableAutoSting7 img,
+#TableAutoSting8 img {
+    display: block;
+    width: 300px;
+    height: 200px;
+
+}
+
+a.linkPostApi:hover {
+    color: #0066cc;
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .StingApiPost {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 7px 10px;
+    }
+
+    div#TableAutoSting1,
+    div#TableAutoSting2,
+    div#TableAutoSting3,
+    div#TableAutoSting4,
+    div#TableAutoSting5,
+    div#TableAutoSting6,
+    div#TableAutoSting7,
+    div#TableAutoSting8 {
+        display: inline-block;
+        z-index: 1;
+        border-radius: 7px;
+        transition: .3s all ease;
+        position: relative;
+        margin-bottom: 3px;
+        overflow: hidden;
+        width: 100%;
+        box-shadow: 0 0 2px 0 #0a0d3714;
+        height: 95px;
+    }
+
+    #TableAutoSting1 img,
+    #TableAutoSting2 img,
+    #TableAutoSting3 img,
+    #TableAutoSting4 img,
+    #TableAutoSting5 img,
+    #TableAutoSting6 img,
+    #TableAutoSting7 img,
+    #TableAutoSting8 img {
+        height: 95px;
+        width: 33%;
+        float: right;
+    }
+
+    a.linkPostApi {
+        height: 80px;
+        min-height: 80px;
+        max-height: 80px;
+        width: 58%;
+        float: left;
+    }
+
+    a.linkPostApi {
+        font-weight: 500;
+        font-size: 14px;
+        text-align: right;
+    }
+
+    .rowApi {
+        width: 90%;
+    }
+
+}
