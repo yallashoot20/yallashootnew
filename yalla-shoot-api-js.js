@@ -8,12 +8,12 @@
 
 const stingapi = async function get() {
   const response = await fetch(
-    "https://almaghrebsport.com/wp-json/wp/v2/posts"
+    "https://ultra.yalla-shoot-hd7.com/wp-json/wp/v2/posts"
   );
   const data = await response.json();
 
   const responsemedia = await fetch(
-    "https://almaghrebsport.com/wp-json/wp/v2/media"
+    "https://ultra.yalla-shoot-hd7.com/wp-json/wp/v2/media"
   );
   const media = await responsemedia.json();
 
